@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:newn/profile/binding/profile_binding.dart';
+import 'package:newn/profile/profile_screen.dart';
 import 'package:newn/register/binding/register_binding.dart';
 
 import 'register/register_screen.dart';
@@ -35,6 +37,11 @@ class MyApp extends StatelessWidget {
 
               ]
      ,   binding: RegisterBinding()
+          ),
+          GetPage(name: "/Profile", page: () =>
+          const ProfileScreen(),
+
+                 binding: ProfileBinding()
           )
 
 
